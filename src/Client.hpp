@@ -47,7 +47,7 @@ public:
         {
             ipServidor.sin_family = AF_INET;
             ipServidor.sin_port = htons(portNumber);
-            ipServidor.sin_addr.s_addr = inet_addr("172.27.232.7");
+            ipServidor.sin_addr.s_addr = inet_addr("172.27.232.6");
      
             if(connect(s, (struct sockaddr *)&ipServidor, sizeof(ipServidor))<0)
             {
